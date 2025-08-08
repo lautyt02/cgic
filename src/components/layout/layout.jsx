@@ -7,3 +7,5 @@ const Layout = ({children})=>{
     <Footer/>
     </>
 }
+
+export {Layout}
