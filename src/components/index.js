@@ -1,3 +1,3 @@
 import { Layout } from "./layout/layout";
-
-export {Layout}
+import { Paragraph } from "./paragraph/paragraph";
+export {Layout, Paragraph}
