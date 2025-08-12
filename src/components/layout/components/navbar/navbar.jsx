@@ -1,12 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { NavItem, NavSubItems } from "./components"
 const NavBar = ({ items }) => {
-    let i = 0
     return <nav>
-        {items && items.map(item => {
+        {items && items.map((item, i) => {
+            const key = item.name + i
+            console.log(key)
             i++
-            console.log(i)
-            return <NavItem key={item.name + i} route={item.route} name={item.name}>
+            return <NavItem key={key} route={item.route} name={item.name} >
                 <NavSubItems items={item.subitems} />
             </NavItem>
         })}
@@ -15,4 +15,3 @@ const NavBar = ({ items }) => {
 
 export { NavBar }
 
-{/*  */ }
