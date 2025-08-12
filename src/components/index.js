@@ -1,3 +1,4 @@
 import { Layout } from "./layout/layout";
 import { Paragraph } from "./paragraph/paragraph";
-export {Layout, Paragraph}
+import { Form } from "./form/form";
+export {Layout, Paragraph, Form}
