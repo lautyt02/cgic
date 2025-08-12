@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom"
-const NavItem = ({ route, name, subitems }) => {
-    return <Link to={route}>
-        <div className="">
-
-        </div>
-    </Link>
+import { useNavigate } from "react-router-dom"
+const NavItem = ({ route, name, children }) => {
+    let navigateTo=useNavigate()
+    const onClickHandle = ()=>{
+        navigateTo(route)
+    }
+    return <div className="" onClick={onClickHandle}>
+        <h5>{name}</h5>
+        {children}
+    </div>
 
 }
+export { NavItem }
