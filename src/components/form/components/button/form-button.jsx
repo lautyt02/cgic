@@ -7,4 +7,4 @@ const FormButton = ({ id, value, handleOnClick }) => {
 
     </>
 }
-export { Button }
+export { FormButton }
