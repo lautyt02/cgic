@@ -1,4 +1,4 @@
-import { FormButton, Input, TextArea } from "./components"
+import { FormButton, Input, TextArea, Radius, Select } from "./components"
 const Form = ({ title, action, method, inputs, buttons }) => {
     return <>
         <h4>{title}</h4>     <form action={action} method={method} className="">
