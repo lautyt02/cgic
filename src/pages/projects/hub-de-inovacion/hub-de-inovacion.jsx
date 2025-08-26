@@ -6,9 +6,9 @@ const paragraphs = [
 ]
 const elements = [{elType: "input", atributes:{ id: "nombre", label: "Nombre:", type: "text", name: "nombre", placeholder: "Ingrese su nombre" }},
     {elType: "input", atributes:{ id: "apellido", label: "Apellido:", type: "text", name: "apellido", placeholder: "Ingrese su apellido" }},
-    {elType: "input", atributes:{ id: "nombre-institucion", label: "Institución de la que forma parte:", type: "text", name: "nombre-institucion", placeholder: "Ingrese el nombre de la Institución" }},
-    {elType: "input", atributes:{ id: "tel", label: "Teléfono:", type: "tel", name: "tel", placeholder: "Ingrese su numero de teléfono" }},
-    {elType: "input", atributes:{ id: "mail", label: "Mail:", type: "email", name: "mail", placeholder: "Ingrese su dirección de mail" }},
+    {elType: "input", atributes:{ id: "nombre-institucion", label: "Institución de la que forma parte:", type: "text", name: "nombre-institucion", placeholder: "Nombre de la Institución" }},
+    {elType: "input", atributes:{ id: "tel", label: "Teléfono:", type: "tel", name: "tel", placeholder: "Su número de teléfono" }},
+    {elType: "input", atributes:{ id: "mail", label: "Mail:", type: "email", name: "mail", placeholder: "Su dirección de mail" }},
 ]
 const buttons = []
 
