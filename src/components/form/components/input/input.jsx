@@ -6,10 +6,13 @@ const validTypes = ["text", "number", "email", "password", "url"]
 const Input = ({ id, label, type, name, propValue, placeholder, autocomplete }) => {
     const [value,setValue]=useState(propValue)
     autocomplete = type == "pasword" ? "false" : autocomplete
+    const handleChange = (newValue)=>{
+        setValue(newValue)
+    }
     return <>
         <label htmlFor={id}>
             {label}
-            <input className="" id={id} type={type} name={name} value={value} placeholder={placeholder} autoComplete={autocomplete||"false"} />
+            <input className="" id={id} type={type} name={name} value={value} placeholder={placeholder} autoComplete={autocomplete||"false"}/>
         </label>
 
     </>
