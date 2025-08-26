@@ -1,17 +1,43 @@
-<<<<<<< HEAD
-# cgic
-Repositorio del sitio web de cgic. Hecho con react/vite, tailwind css y Firestore.
-=======
-# React + Vite
+# CGIC Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto full-stack con arquitectura MVC.
 
-Currently, two official plugins are available:
+## Tecnologías
+- **Frontend**: React + Vite + TailwindCSS
+- **Backend**: Flask con CORS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos
+- Node.js 18+
+- Python 3.11+
 
-## Expanding the ESLint configuration
+## Backend
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
+Servidor en `http://localhost:5000`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> b79475e (Initialized React project using vite)
+## Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Aplicación en `http://localhost:5173`.
+
+## Endpoints
+- `GET /api/health`
+- `GET /api/content`
+- `POST /api/contact`
+
+## Estructura
+```
+/frontend - SPA React
+/backend  - API Flask
+```
+
+## Licencia
+MIT
