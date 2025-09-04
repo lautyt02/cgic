@@ -1,3 +1,4 @@
 import { NavSubItems } from "./navsubitems/navsubitems";
 import { NavItem } from "./navitem/navitem";
-export {NavItem, NavSubItems}
+import { Logo } from "./logo/logo";
+export { NavItem, NavSubItems, Logo }

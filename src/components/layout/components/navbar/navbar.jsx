@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-import { NavItem, NavSubItems } from "./components"
+import { NavItem, NavSubItems, Logo } from "./components"
 const NavBar = ({ items }) => {
     return <nav>
+        <Logo></Logo>
         {items && items.map((item, i) => {
             const key = item.name + i
             console.log(key)
