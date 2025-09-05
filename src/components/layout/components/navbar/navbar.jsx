@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { NavItem, NavSubItems, Logo } from "./components"
 const NavBar = ({ items }) => {
-    return <nav className="flex bg-cgic-gris-claro p-3 items-center shadow-xs shadow-cgic-azul fixed w-dvw">
+    return <nav className="flex bg-cgic-gris-claro h-20 items-center shadow-xs shadow-cgic-azul fixed w-dvw">
         <Logo />
         {items && items.map((item, i) => {
             const key = item.name + i

@@ -8,5 +8,5 @@ const Logo=()=>{
 export {Logo}
 // bg-[url('/src/assets/cgic-logo.png')]
 
-<div className="bg-[url(/src/assets/logo-cgic.svg)] bg-no-repeat bg-cover min-w-3xs min-h-[20px]" >
+<div className="bg-[url(/src/assets/logo-cgic.svg)] bg-no-repeat bg-cover min-w-3xs min-h-[20px] m-10" >
     </div>
