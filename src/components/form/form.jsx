@@ -1,9 +1,10 @@
-import { FormButton, Input, TextArea, Radius, Select } from "./components"
+import { FormButton, Input, TextArea, Radius, Select} from "./components"
+import { Header } from "../header/header"
 const Form = ({ title, action, method, elements }) => {
     const inputGenerator = element => {
         switch (element.elType) {
             case "input":
-                return  <Input id={element.atributes.id} label={element.atributes.label} type={element.atributes.type} name={element.atributes.name || ""} value={element.atributes.value || ""} placeholder={element.atributes.placeholder || ""} autocomplete={element.atributes.autocomplete || false} />
+                return <Input id={element.atributes.id} label={element.atributes.label} type={element.atributes.type} name={element.atributes.name || ""} value={element.atributes.value || ""} placeholder={element.atributes.placeholder || ""} autocomplete={element.atributes.autocomplete || false} />
             case "button":
                 return <FormButton id={element.atributes.id} value={element.atributes.value} handleOnClick={element.atributes.onClick} />
             case "textarea":
@@ -18,9 +19,9 @@ const Form = ({ title, action, method, elements }) => {
 
     }
     return <>
-        <h4>{title}</h4>
+        <Header text={title} />
         <form action={action} method={method} className="">
-            {elements.map((element,i) => {
+            {elements.map((element, i) => {
                 return <div key={element.atributes.id + i}>{inputGenerator(element)} </div>
             })}
         </form>
