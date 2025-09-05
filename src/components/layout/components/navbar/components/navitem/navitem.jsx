@@ -4,7 +4,7 @@ const NavItem = ({ route, name, children }) => {
     const onClickHandle = ()=>{
         navigateTo(route)
     }
-    return <div className="" onClick={onClickHandle}>
+    return <div className="text-cgic-naranja-1 text-2xl hover:text-cgic-azul p-2" onClick={onClickHandle}>
         <h5>{name}</h5>
         {children}
     </div>
