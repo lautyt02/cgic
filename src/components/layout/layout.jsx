@@ -10,7 +10,10 @@ const Layout = ({ children }) => {
     
     return <>
         <NavBar items={items} />
-        {children}
+        <div className="pt-30">
+            {children}
+        </div>
+        
         <Footer />
     </>
 }
