@@ -21,7 +21,7 @@ const HubDeInovacion = () => {
             {paragraphs && paragraphs.map((paragraph) => {
                 return <Paragraph id={paragraph.id} key={paragraph.id} title={paragraph.title} text={paragraph.text} />
             })}
-            <Form elements={elements}>
+            <Form title="Quiero Saber Más"elements={elements}>
 
             </Form>
 
