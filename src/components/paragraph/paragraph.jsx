@@ -1,8 +1,8 @@
 import { Header } from "../header/header"
-const Paragraph = ({ title, text }) => {
+const Paragraph = ({ title, text, id }) => {
 
-    return <div className="mb-5">
-        <Header text={title}/>
+    return <div id={id}className="mb-5">
+        <Header  text={title}/>
         <p className="">{text}</p>
     </div>
 }
