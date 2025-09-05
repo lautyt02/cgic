@@ -6,7 +6,3 @@ const Logo=()=>{
     
 }
 export {Logo}
-// bg-[url('/src/assets/cgic-logo.png')]
-
-<div className="bg-[url(/src/assets/logo-cgic.svg)] flex-none bg-no-repeat bg-cover w-3xs h-[20px]" >
-    </div>
