@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom"
 import { NavHashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.development"
 const NavItem = ({ route, name}) => {
 

@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     
     return <>
         <NavBar items={items} />
-        <div className="mt-25 px-[10dvw]">
+        <div className="mt-30 px-[10dvw]">
             {children}
         </div>
         
