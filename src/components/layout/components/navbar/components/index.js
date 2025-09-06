@@ -1,4 +1,4 @@
 import { NavSubItems } from "./navsubitems/navsubitems";
-import { NavItem } from "./navitem/navitem";
+import { NavLinkContainer } from "./navlinks/navlink-container";
 import { Logo } from "./logo/logo";
-export { NavItem, NavSubItems, Logo }
+export { NavLinkContainer, NavSubItems, Logo }
