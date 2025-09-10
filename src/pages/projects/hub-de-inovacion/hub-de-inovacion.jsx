@@ -23,10 +23,10 @@ const HubDeInovacion = () => {
                 })}
                 
             </section>
-            <section className={"mb-5 "+"md:"+paddingX}>
+            <section className={"mb-5 "+`md:${paddingX}`}>
                 <HubForm />
             </section>
-            <section className={"md:"+paddingX}>
+            <section className={`md:${paddingX}`}>
                 <Banner title="Nos Acompañan" id="sponsors" images={logos} />
             </section>
             
