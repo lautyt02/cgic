@@ -23,7 +23,7 @@ const NavLinkContainer = ({ items }) => {
                     return <NavLink key={key} route={item.route} name={item.name} />
                 })}
             </div>
-            <button className="z-4 w-15 md:hidden" onClick={togleIsOpened}><img src={menuIsOpened ? isOpenSrc : isNotOpenSrc} alt="" /></button>
+            <button className="z-4 w-12 md:hidden" onClick={togleIsOpened}><img src={menuIsOpened ? isOpenSrc : isNotOpenSrc} alt="Abrir o cerrar menu" /></button>
         </>
     }
 }
