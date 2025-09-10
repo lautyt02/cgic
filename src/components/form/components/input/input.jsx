@@ -11,8 +11,8 @@ const Input = ({ id, label, type, name, propValue, placeholder, autocomplete }) 
     }
     return <>
         <label htmlFor={id}>
-            {label}
-            <input className="" id={id} type={type} name={name} value={value} placeholder={placeholder} autoComplete={autocomplete||"false"}/>
+            <h3>{label}</h3>
+            <input className="border-cgic-azul border rounded-sm min-w-60 max-w-150 " id={id} type={type} name={name} value={value} placeholder={placeholder} autoComplete={autocomplete||"false"}/>
         </label>
 
     </>
