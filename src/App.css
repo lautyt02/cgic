@@ -20,6 +20,7 @@
 
 @layer base {
     html {
+        padding-top: 120px;
         scroll-padding-top: 120px;
         font-family: Montserrat;
         background-color: #fffff0;
