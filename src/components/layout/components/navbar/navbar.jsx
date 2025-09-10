@@ -7,7 +7,7 @@ const items = [
 ]
 const NavBar = () => {
     return <>
-        <nav className="flex bg-cgic-gris-claro h-25 items-center justify-between shadow-xs shadow-cgic-azul fixed top-0 left-0 right-0 w-full px-3">
+        <nav className="flex bg-cgic-gris-claro h-25 items-center justify-between shadow-xs shadow-cgic-azul fixed top-0 left-0 right-0 w-dvw px-3">
             <Logo />
             <NavLinkContainer items={items}/>
         </nav>
