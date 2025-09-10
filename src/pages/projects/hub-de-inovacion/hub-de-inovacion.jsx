@@ -1,34 +1,36 @@
-import { Paragraph, Form } from "../../../components"
-const paragraphs = [
-    { id: "quienes-somos", title: "¿Quienes Somos?", text: "hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub" },
-    { id: "que-va-a-haber", title: "¿Qué va a haber?", text: "hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub" },
-    { id: "cuando", title: "¿Cuando es?", text: "hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub" },
-    { id: "que-se-va-a-hacer", title: "¿Cuando es?", text: "hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub" },
-    { id: "por-qué?", title: "¿Cuando es?", text: "hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub hbdhbshbsd dshbshdbbhdsbhsd sdnsdjnjdsjnds kmsdndisbfub" }
-]
-const elements = [{elType: "input", atributes:{ id: "nombre", label: "Nombre:", type: "text", name: "nombre", placeholder: "Ingrese su nombre" }},
-    {elType: "input", atributes:{ id: "apellido", label: "Apellido:", type: "text", name: "apellido", placeholder: "Ingrese su apellido" }},
-    {elType: "input", atributes:{ id: "nombre-institucion", label: "Institución de la que forma parte:", type: "text", name: "nombre-institucion", placeholder: "Nombre de la Institución" }},
-    {elType: "input", atributes:{ id: "tel", label: "Teléfono:", type: "tel", name: "tel", placeholder: "Su número de teléfono" }},
-    {elType: "input", atributes:{ id: "mail", label: "Mail:", type: "email", name: "mail", placeholder: "Su dirección de mail" }},
-]
-const buttons = []
+import { useEffect, useState } from "react"
+import { Paragraph, Banner } from "../../../components"
+import { HubForm } from "./components"
+import { getLogos, getHubData } from "../../../servicies/content"
 
 const HubDeInovacion = () => {
-
+    const [logos, setLogos] = useState([])
+    const [paragraphs, setParagraphs] = useState([])
+    useEffect(() => {
+        getHubData().then((data) => {
+            setParagraphs(data)
+        })
+        getLogos().then((data) => {
+            setLogos(data)
+        })
+    }, [])
+    const paddingX="px-[10dvw]"
     return <>
-        <section>
-            {paragraphs && paragraphs.map((paragraph) => {
-                return <Paragraph id={paragraph.id} key={paragraph.id} title={paragraph.title} text={paragraph.text} />
-            })}
-            <Form title="Quiero Saber Más"elements={elements}>
-
-            </Form>
-
-        </section>
-        <section>
-
-        </section>
+        <main >
+            <section className={paddingX}>
+                {paragraphs && paragraphs.map((paragraph) => {
+                    return <Paragraph id={paragraph.id} key={paragraph.id} title={paragraph.title} text={paragraph.text} />
+                })}
+                
+            </section>
+            <section className={"mb-5 "+"md:"+paddingX}>
+                <HubForm />
+            </section>
+            <section className={"md:"+paddingX}>
+                <Banner title="Nos Acompañan" id="sponsors" images={logos} />
+            </section>
+            
+        </main>
     </>
 }
 export { HubDeInovacion }
