@@ -1,0 +1,1 @@
+export type { TOptions } from "./options/options";

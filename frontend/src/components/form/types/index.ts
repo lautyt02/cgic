@@ -1,0 +1,1 @@
+export type { TFormComponent, TOptions } from "./form-component/form-component";
