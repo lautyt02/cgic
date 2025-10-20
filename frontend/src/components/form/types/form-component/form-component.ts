@@ -3,9 +3,3 @@ export type TFormComponent = {
     label: string,
     name: string,
 }
-export type TOptions = TFormComponent & {
-    options: {
-        value: string,
-        text: string
-    }[]
-}
