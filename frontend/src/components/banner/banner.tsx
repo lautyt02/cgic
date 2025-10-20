@@ -1,9 +1,9 @@
 import { Header } from "../header/header"
-import type { Tlogos } from "../../data/data-types"
+import type { Tlogo } from "../../pages/projects/hub-de-inovacion/data/data-types"
 type BannerProps = {
     title:string,
     id:string,
-    images:Tlogos
+    images:Tlogo[]
 }
 const Banner = ({ title, id, images }:BannerProps) => {
     return <div id={id} className="">
