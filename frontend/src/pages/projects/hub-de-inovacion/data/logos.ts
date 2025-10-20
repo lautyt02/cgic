@@ -1,4 +1,4 @@
-import type { Tlogo } from "./data-types";
+import type { Tlogo } from "../../../../types/data-types";
 export const logos: Tlogo[] = [
         {
             src: "/src/assets/images/BP_Youth_Climate_Action_Fund_Logo_Options_040824_V1_FNL_YCAF-Logo-with-Tagline-as-Outlined-Text.png",

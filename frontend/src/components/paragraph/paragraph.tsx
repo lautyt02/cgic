@@ -1,4 +1,4 @@
-import type { Tparagraph } from "../../data/data-types"
+import type { Tparagraph } from "../../types"
 import { Header } from "../header/header"
 
 const Paragraph = ({ title, text, id }: Tparagraph) => {

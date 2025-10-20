@@ -1,0 +1,1 @@
+export type { Tlogo,Tparagraph } from "./data-types";

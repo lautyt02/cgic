@@ -1,5 +1,5 @@
 import { Header } from "../header/header"
-import type { Tlogo } from "../../pages/projects/hub-de-inovacion/data/data-types"
+import type { Tlogo } from "../../types/data-types"
 type BannerProps = {
     title:string,
     id:string,

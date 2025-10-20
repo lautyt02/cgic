@@ -1,4 +1,4 @@
-import type { Tparagraph } from "./data-types"
+import type { Tparagraph } from "../../../../types/data-types"
 export const paragraphs: Tparagraph[] = [
     {
         id: "quienes-somos", title: "Quienes Somos",
