@@ -1,1 +1,1 @@
-export type { TFormComponent, TOptions } from "./form-component/form-component";
+export type { TFormComponent } from "./form-component/form-component";
