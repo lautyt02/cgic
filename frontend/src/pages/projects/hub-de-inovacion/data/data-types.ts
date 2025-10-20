@@ -3,9 +3,9 @@ export type Tparagraph = {
     title: string,
     text: React.ReactNode,
 }
-export type Tlogos = {
+export type Tlogo = {
     src: string,
     alt: string,
     width: string,
     link?: string
-}[]
+}
